@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    border: 2px solid #ddd; /* Reduced border size */
+    border-radius: 12px; /* Reduced border radius */
+    padding: 20px; /* Reduced padding */
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+  }
+  
+  #display {
+    width: calc(100% - 10px); /* Adjusted width */
+    padding: 15px; /* Reduced padding */
+    margin-bottom: 20px; /* Reduced margin */
+    font-size: 28px; /* Reduced font size */
+    border: 2px solid #ddd; /* Reduced border size */
+    border-radius: 10px; /* Reduced border radius */
+    outline: none;
+    text-align: left;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Reduced grid gap */
+  }
+  
+  button {
+    padding: 30px; /* Reduced padding */
+    font-size: 36px; /* Reduced font size */
+    border: none;
+    border-radius: 10px; /* Reduced border radius */
+    cursor: pointer;
+    outline: none;
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.operator {
+    background-color: #ff9500;
+    color: #fff;
+  }
+  
+  button.equal {
+    grid-column: span 2;
+    background-color: #007aff;
+  }
+  
+  button.clr,
+  button.del {
+    grid-column: span 2; /* Make the Clr and Del buttons span 2 columns */
+    padding: 30px; /* Adjusted padding */
+  }
+  
+  button:hover {
+    background-color: #dcdcdc;
+  }
+  
